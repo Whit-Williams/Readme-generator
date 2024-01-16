@@ -9,7 +9,7 @@ const questions = [
 {
     type: "input",
     name: "title",
-    message: "What is the name of your project?"
+    message: "Welcome to the README generator. Please enter the name of your project."
 },
 {
     type: "input",
@@ -24,17 +24,22 @@ const questions = [
 {
     type: "input",
     name: "link",
-    message: "Add a link to your deployed project here."
+    message: "Add a URL link to your deployed project here."
 },
 {
     type: "input",
     name: "technologies",
-    message: "What technologies or languages were used to create this project? (Please separate each item with a comma)"
+    message: "What technologies or languages were used to create this project? (To create a list, please use hashtag to create new bullet point)"
+},
+{
+    type: "input",
+    name: "features",
+    message: "List the project features you would like to highlight here. (To create a list, please use hashtag to create new bullet point)"
 },
 {
     type: "input",
     name: "requirements",
-    message: "List any project dependencies here."
+    message: "Specify any project dependencies here."
 },
 {
     type: "input",
@@ -44,13 +49,13 @@ const questions = [
 {
     type: "input",
     name: "usage",
-    message: "Add examples of hwow your project can be used here. Screenshots, code examples and demos are helpful here."
+    message: "Add examples of how your project can be used here. (Screenshots, code examples and demos are helpful here)"
 },
 {
     type: "checkbox",
     name: "license",
     message: "Select your project license.",
-    options: []
+    choices: ["none", "MPL_2.0", "Apache_2.0", "MIT", "BSL_1.0", "GPLv3", "Unlicense", "CCO_1.0"]
 },
 {
     type: "input",
@@ -60,29 +65,41 @@ const questions = [
 {
     type: "input",
     name: "tests",
-    message: "Explain how users can ."
+    message: "Explain how users can test the application."
 },
 {
-    type: "input",
-    name: "questions",
-    message: "Explain how users can contribute to your code here."
+     type: "input",
+     name: "owner",
+     message: "Please provide your GitHub username.",
+},
+{
+     type: "input",
+     name: "email",
+     message: "Please provide a valid email address.",
 },
 {
     type: "input",
     name: "credits",
-    message: "This is where you can acknowledge any help you had with your project."
+    message: "This is where you can acknowledge any help you had with your project. (To create a list, please use hashtag to create new bullet point)"
 }
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    const fileDir = path.join(process.cwd(), "output");
+
+    if (!fs.existsSync(fileDir)) {
+        fs.mkdirSync(fileDir);
+    }
+
+    return fs.writeFileSync(path.join(fileDir, fileName), data);
 }
 
 // function to initialize program
 function init() {
 inquirer.prompt(questions).then((responses) => {
 console.log("Creating README file, please wait...");
+
 writeToFile("../output/README.md", generateMarkdown({...responses}));
 });
 }

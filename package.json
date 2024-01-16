@@ -1,0 +1,23 @@
+{
+  "name": "the-read-me-generator",
+  "version": "1.0.0",
+  "description": "This application allows you to generate a professional README markdown file using node.js and inquirer npm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Whitney Williams",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whit-Williams/Readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Whit-Williams/Readme-generator/issues"
+  },
+  "homepage": "https://github.com/Whit-Williams/Readme-generator#readme"
+}
