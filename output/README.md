@@ -1,9 +1,9 @@
-# ddgddf
-  ![Github license](https://img.shields.io/badge/License-none-yellowgreen.svg)
+# Bootstrap Portfolio
+  ![Github license](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)
   ## Description
-  fhyuyuyty
-  #### [You can visit the deployed application by clicking here.](uuyiyu)
-  ![Screenshot image of application](gjyt)
+  Using Bootstrap 5, I created a portfolio to present all of the work I have done on the Bootcamp so far. It will allow me to showcase my work to future employers.
+  #### [You can visit the deployed application by clicking here.](https://whit-williams.github.io/ww-portfolio/)
+  ![Screenshot image of application](/images/example-screenshot.png)
 ## Table of Contents
   * [Technologies](#technologies)
   * [Features](#features)
@@ -18,34 +18,32 @@
   * [Credits](#credits)
 
 ## Technologies
-* jhhjyj
-* jtjrtjtj
-* tjtrjrtj
-* sgwge
+* Visual Studio Code 1.83.1
+* Git Bash 5.2.15
+* Bootstrap 5
 ## Features
-* egegwge
-* rrherh
-* rherrehr
+* A navigation bar with a menu that links to each section of the web page
+* A jumbotron featuring my picture and brief description
+* A portfolio section that uses Bootstrap cards with links to both the live project and GitHub code repo
+* Skills section styled with progress bars using CSS
 ## How to Use This Application:
  ### Requirements
-  rherhreh
+  none
  ### Installation
-  rehrhe
+  n/a
  ### Usage
-  erhre
+  n/a
 ## License
-License used for ths project: none.
+License used for ths project: Apache 2.0.
 
 For further informaton on license types, please visit https://choosealicense.com/appendix/.
 ## How to Contribute
-rhrehrere
+At the moment, giving that this is a portfolio, no contributions will be needed.
 ## Testing
-rehrreh
+n/a
 ## Questions
-For any queries or questions, please email me [here](mailto:rheh?subject=[GitHub]%20Dev%20Connect) or visit [github/rhrhehre](https://github.com/rhrhehre) to get in touch.
+For any queries or questions, please email me [here](mailto:name@gmail.com?subject=[GitHub]%20Dev%20Connect) or visit [github/whit-williams](https://github.com/whit-williams) to get in touch.
 ## Credits
-* 
-* dsgrhrehr
-* egwetewgw
-* wtwwtg4wgwr
-* wewetetggwe
+* Pixabay for free placeholder images
+* Page icons from fontawsome
+* Google searches
